@@ -5,7 +5,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 //group='com.github.SaneebSalam'
 group = 'com.saneebsalam.www.my' // Change this to match your package name
-//version = '1.0.1' // Change this to match your version number
+version = '1.0.1' // Change this to match your version number
 
 
 android {
