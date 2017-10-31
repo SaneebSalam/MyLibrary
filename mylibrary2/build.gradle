@@ -1,8 +1,12 @@
 apply plugin: 'com.android.library'
 
+//apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.SaneebSalam'
+//group='com.github.SaneebSalam'
+group = 'com.saneebsalam.www.my' // Change this to match your package name
+//version = '1.0.1' // Change this to match your version number
+
 
 android {
     compileSdkVersion 26
@@ -17,6 +21,23 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+
+//    task generateSourcesJar(type: Jar) {
+//        from android.sourceSets.main.java.srcDirs
+//        classifier 'sources'
+//    }
+//
+//    task generateJavadocs(type: Javadoc) {
+//        source = android.sourceSets.main.java.srcDirs
+//        classpath += project.files(android.getBootClasspath()
+//                .join(File.pathSeparator))
+//    }
+//
+//    task generateJavadocsJar(type: Jar) {
+//        from generateJavadocs.destinationDir
+//        classifier 'javadoc'
+//    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -30,6 +51,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+//    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     testCompile 'junit:junit:4.12'
 }
+
+
